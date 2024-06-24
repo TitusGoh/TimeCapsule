@@ -1,0 +1,23 @@
+.bt-body {
+    background-color: rgb(122, 89, 95);
+    color: white;
+}
+ul {
+    color: white;
+}
+ 
+.login-button {
+    margin-left: 10px;
+   
+   
+    border: none; /* Remove border */
+   
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+  }
+ 
+  .login-button:hover {
+    background-color: yellow;
+    color: black;
+    transform: scale(1.05);
+  }

@@ -1,0 +1,111 @@
+/* Custom font for headings and text */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* General container styling */
+.container {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #333333;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 3rem;
+}
+
+/* Heading styling */
+h1 {
+  color: black;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Paragraph styling */
+p {
+  color: #555555;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* List item styling */
+ul li {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+/* List item hover effect */
+ul li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Strong tag styling */
+ul li strong {
+  color: #007bff;
+  font-weight: 500;
+}
+
+/* Icon styling */
+ul li .icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: black;
+}
+
+/* Button styling */
+.call-to-action {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto 0;
+  padding: 0.75rem 1.5rem;
+  background-color: black;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease; 
+}
+
+/* Button hover effect */
+.call-to-action:hover {
+  background-color: yellow;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  ul li {
+    padding: 0.75rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  ul li .icon {
+    margin-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,75 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="row descriptor-section mb-4">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label><strong>Name:</strong></label>
+                                <input type="text" [(ngModel)]="capsule.name" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label><strong>Created Date:</strong></label>
+                                <input type="date" [(ngModel)]="capsule.createdDate" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label><strong>Open Date:</strong></label>
+                                <input type="date" [(ngModel)]="capsule.openDate" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label><strong>Description:</strong></label>
+                                <textarea [(ngModel)]="capsule.description" class="form-control"></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <h3 class="mb-4">Files:</h3>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div *ngFor="let file of files; let i = index" class="col-md-3 mb-4">
+                                    <div class="card file-card">
+                                        <img [src]="file.thumbnailUrl" class="card-img-top" alt="{{ file.filename }}">
+                                        <div class="card-body text-center">
+                                            <p class="card-text">{{ file.filename }}</p>
+                                            <button type="button" class="btn btn-danger btn-sm"
+                                                (click)="deleteFile(i)">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-12">
+                            <input type="file" (change)="onFileSelected($event)" multiple>
+                            <button (click)="uploadFiles()" class="btn btn-success mt-2">Add Files</button>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col-md-12 text-right">
+                            <button (click)="updateCapsule()" class="btn btn-primary mr-2">Update</button>
+                            <button (click)="deleteCapsule()" class="btn btn-danger">Delete</button>
+                        </div>
+                    </div>
+
+                    <div *ngIf="updated" class="popup">
+                        <div class="popup-content">
+                            <button (click)="goHome()" class="btn btn-primary">Go Home</button>
+                            <button (click)="capsuleLocked()" class="btn btn-secondary">Mark as Completed</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

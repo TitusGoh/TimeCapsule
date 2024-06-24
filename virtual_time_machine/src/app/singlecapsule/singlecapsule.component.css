@@ -1,0 +1,176 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* Card Styles */
+.card {
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+/* Descriptor Section Styles */
+.descriptor-section {
+    margin-bottom: 20px;
+}
+
+.descriptor-section .col-md-4,
+.descriptor-section .col-md-12 {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    background-color: #ffffff;
+}
+
+.descriptor-section strong {
+    color: #343a40;
+}
+
+/* List Group Styles */
+.list-group-item {
+    transition: all 0.3s;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.list-group-item:hover {
+    background-color: #e9ecef;
+}
+
+/* Section Title */
+h3 {
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+/* Horizontal Rule */
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Button Spacing */
+.btn + .btn {
+    margin-left: 10px;
+}
+
+
+.container {
+  margin-top: 50px;
+}
+ 
+.card {
+  border: none;
+  border-radius: 10px;
+}
+ 
+.card-body {
+  padding: 30px;
+}
+ 
+.descriptor-section .form-group {
+  margin-bottom: 20px;
+}
+ 
+h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+ 
+.file-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+ 
+.file-card img {
+  border-bottom: 1px solid #ddd;
+}
+ 
+.file-card .card-body {
+  padding: 10px;
+}
+ 
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+ 
+.btn-primary {
+  background-color: #ffffff;
+  border-color: #030303;
+  color: #000000;
+}
+
+.btn-secondary {
+    background-color: #000000;
+    border-color: #000000;
+  }
+ 
+.btn-primary:hover {
+    background-color: yellow;
+    color: black;
+    transform: scale(1.05);
+}
+
+.btn-secondary:hover {
+    background-color: yellow;
+    color: black;
+    transform: scale(1.05);
+}
+ 
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+ 
+.btn-danger:hover {
+  background-color: #c82333;
+  border-color: #bd2130;
+  transform: scale(1.05);
+}
+ 
+.btn-success {
+  background-color: #28a745;
+  border-color: #28a745;
+}
+ 
+.btn-success:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+ 
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  z-index: 1000;
+}
+ 
+.popup-content {
+  text-align: center;
+}
+ 
+.popup-content .btn {
+  margin: 10px;
+}

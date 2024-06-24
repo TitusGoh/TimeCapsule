@@ -1,0 +1,64 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container Styles */
+.container {
+  padding: 20px;
+}
+
+/* Panel Heading */
+.panel-heading {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: black;
+  font-weight: bolder;
+  text-align: center;
+}
+
+/* Panel Styles */
+.panel {
+  border: none;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #f1f1f1;
+  color: #333;
+  font-weight: bold;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+.mat-elevation-z8 {
+  box-shadow: none;
+}
+
+.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.clickable-row:hover {
+  background-color: #f9f9f9;
+}

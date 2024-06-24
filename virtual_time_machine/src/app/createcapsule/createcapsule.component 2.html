@@ -1,0 +1,38 @@
+<div class="container mat-app-background">
+  <h3 class="panel-heading">Create Capsule</h3>
+
+  <form (ngSubmit)="createCapsule()">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" [(ngModel)]="capsule.name" name="name" id="name" required>
+    </div>
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <textarea [(ngModel)]="capsule.description" name="description" id="description" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="createdDate">Created Date:</label>
+      <input type="date" [(ngModel)]="capsule.createdDate" name="createdDate" id="createdDate" disabled>
+    </div>
+    <div class="form-group">
+      <label for="openDate">Open Date:</label>
+      <input type="date" [(ngModel)]="capsule.openDate" name="openDate" id="openDate" required>
+    </div>
+    <div class="form-group">
+      <label for="file">Upload Files:</label>
+      <input type="file" (change)="onFileChange($event)" multiple>
+    </div>
+
+    <!-- Uploaded files with delete buttons -->
+    <div *ngFor="let file of uploadedFiles; let i = index">
+      {{ file }}
+      <button type="button" (click)="deleteFile(i)">Delete</button>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+  <div *ngIf="submitted">
+    <button (click)="goHome()">Return to Home</button>
+    <button *ngIf="createdCapsuleID" (click)="capsuleLocked()">Mark as Completed</button>
+  </div>
+</div>

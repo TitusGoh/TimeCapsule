@@ -1,0 +1,1 @@
+{"version":3,"file":"pricing.component.js","sourceRoot":"","sources":["../../../../src/app/pricing/pricing.component.ts"],"names":[],"mappings":";AAAA,OAAO,EAAE,SAAS,EAAE,MAAM,eAAe,CAAC;AAOnC,IAAM,gBAAgB,GAAtB,MAAM,gBAAgB;CAE5B,CAAA;AAFY,gBAAgB;IAL5B,SAAS,CAAC;QACT,QAAQ,EAAE,aAAa;QACvB,WAAW,EAAE,0BAA0B;QACvC,QAAQ,EAAE,yBAAyB;KACpC,CAAC;GACW,gBAAgB,CAE5B"}

@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="col-md-12">
+      <div class="row">
+        <div *ngFor="let file of files; let i = index" class="col-md-3 mb-3">
+          <div class="card">
+            <img [src]="file.thumbnailUrl" class="card-img-top" alt="{{ file.filename }}">
+            <div class="card-body text-center">
+              <p class="card-text">{{ file.filename }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

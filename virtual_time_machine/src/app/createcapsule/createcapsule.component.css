@@ -1,0 +1,141 @@
+/* Custom font for headings and text */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Container styling */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Panel heading styling */
+.panel-heading {
+  text-align: center;
+  color: black;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+/* Label styling */
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Input and textarea styling */
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: black;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* File input styling */
+.form-group input[type="file"] {
+  padding: 0.5rem;
+}
+
+/* Button styling */
+button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: yellow;
+  color: black;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Uploaded files list styling */
+.uploaded-files {
+  margin-top: 0.5rem;
+}
+
+.uploaded-files div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  background-color: #fff;
+  transition: box-shadow 0.3s;
+}
+
+.uploaded-files div:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.uploaded-files div button {
+  background-color: #f44336;
+  color: #fff;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.uploaded-files div button:hover {
+  background-color: #e53935;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  .panel-heading {
+    font-size: 1.5rem;
+  }
+
+  button {
+    width: 100%;
+    padding: 1rem;
+  }
+}

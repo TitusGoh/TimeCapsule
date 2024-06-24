@@ -1,0 +1,89 @@
+.jb-body {
+  /*
+  background-image: url("https://www.istockphoto.com/photo/to-do-list-text-on-notepad-gm1285308242-382184795");
+  */
+  background-color: rgb(239, 193, 113);
+}
+
+.full-screen-container {
+    width: 100%;
+    display: flex;
+    overflow: hidden; /* Prevent scrolling overflow */
+    height: 100vh; /* Full viewport height */
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('../../assets/images/family2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
+.login-button,
+.capsules-button,
+.new-button,
+.open-button {
+  width: 10%;
+  height: auto;
+  padding: 10px 15px;
+  margin: 10px;
+  background-color: black; 
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-button:hover,
+.capsules-button:hover,
+.new-button:hover,
+.open-button:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.login-button {
+position: absolute;
+top: 15%;
+right: 20px;
+}
+
+.capsules-button {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.new-button {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.open-button {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.home-image {
+top: 100px;
+left: 0;
+right: 0;
+width: 480px;
+height: 370px;
+margin: auto;
+position: absolute;
+object-fit: cover;
+}
+
+.bt-body {
+background-color: rgb(23, 95, 228);
+color: white;
+}

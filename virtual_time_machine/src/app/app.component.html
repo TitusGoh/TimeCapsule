@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">
+      <img src="https://i.pinimg.com/736x/2d/61/9f/2d619f53b46d506e7f7478dd9c56d83f.jpg" alt="image" class="mr-2" style="width: 40px;">
+      Virtual Time Machine
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/features">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/pricing">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">Contact</a>
+        </li>
+        <li class="nav-item" *ngIf="!capsuleProxyService.isUserLoggedIn()">
+          <a class="nav-link btn btn-primary text-white login-button" (click)="loginWithGoogle()">Login</a>
+        </li>
+        <li class="nav-item dropdown" *ngIf="capsuleProxyService.isUserLoggedIn()">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Hello, {{ capsuleProxyService.getUserName() }}
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" (click)="logout()">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<router-outlet></router-outlet>
