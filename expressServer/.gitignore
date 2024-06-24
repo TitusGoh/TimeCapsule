@@ -44,3 +44,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Environment variables
+.env
+
+# Ignore specific secret files
+expressServer/googleOauth.js
+expressServer/googleOauth.ts
